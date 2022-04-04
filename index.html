@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" type="text/css" href="main.css" />
+   <script src="script.js"></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   <title>FOOD4U</title>
+</head>
+
+<body>
+   <div class="general-content">
+      <!-- Logo -->
+      <header>
+         <div class="logo"></div>
+         <h1 class="titulo">FOOD4U</h1>
+         <a href="login/index.html">
+            <nav></nav>
+         </a>
+      </header>
+
+      <!-- reservacion -->
+      <div class="container">
+         <a href="https://reservandonos.com/">
+            <button class="btn btn--4">Reservacion</button></a>
+      </div>
+
+      <!-- Imagenes se agrandan -->
+      <div class="container-img">
+         <div class="cont-img">
+            <div class="imgiz">
+               <img src="img/bread-101636.jpg" alt="">
+               <img src="img/pizza-2589575_1920.jpg" alt="">
+            </div>
+            <div class="img2">
+               <img src="img/coffee-4908764_1920.jpg" alt="">
+               <img src="img/sandwich-2977251_1920.jpg" alt="">
+            </div>
+         </div>
+      </div>
+      <!--Mision valores y vision-->
+      <div class="container-v">
+         <div class="containerv1">
+            <h1>MISION</h1>
+            <p>Satisfacer las necesidades gastronómicas de nuestros clientes, ofreciendo
+               alimentos y servicios con la más alta calidad, donde se sobrepasen las
+               expectativas de nuestros clientes y ser un espacio de trabajo que permita la
+               realización personal y el Desarrollo de sus colaboradores en el grupo.</p>
+         </div>
+         <div class="containerv1">
+            <h1>VISION</h1>
+            <p>Nuestra visión a futuro es ayudar a crear una localidad más saludable,
+               más consciente sobre su nutrición, y que nuestra ciudad tenga una opción
+               confiable y de bajo costo para comer bien, sin sacrificar el placer de comer.</p>
+         </div>
+         <div class="containerv1">
+            <h1>VALORES</h1>
+            <p>Honestidad, confianza, firmeza, responsabilidad y liderazgo.</p>
+         </div>
+      </div>
+   </div>
+   <!--CONTACTANOS-->
+   <section id="contact" class="p-80">
+      <div class="container-contact">
+         <h4>Contactanos</h4>
+         <p class="large">Servicio de calidad</p>
+         <form action="">
+            <input type="text" id="name" placeholder="Tu nombre">
+            <input type="email" id="email" placeholder="Tu correo">
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button class="btn1">Enviar</button>
+         </form>
+      </div>
+      </a>
+      </div>
+      </div>
+   </section>
+
+   <!--RELOJ y CALENDARIO-->
+   <div class="allrj">
+      <div class="total-r">
+         <h1 class="titulo-r">RELOJ</h1>
+         <h1 class="main_time" id="time"></h1>
+      </div>
+
+      <div class="root">
+         <div class="calendar" id="calendar"></div>
+      </div>
+   </div>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+   <script type="text/javascript" src="./js/calendar.js"></script>
+   <script type="text/javascript">
+      let calendar = new Calendar('calendar');
+      calendar.getElement().addEventListener('change', e => {
+         console.log(calendar.value().format('LLL'));
+      });
+
+      let calendar2 = new Calendar('calendar2');
+      calendar2.getElement().addEventListener('change', e => {
+         console.log(calendar2.value().format('LLL'));
+      });
+
+   </script>
+   <!--carrusel-->
+   <div class="wrapper">
+      <div class="outer">
+         <div class="card" style="--delay:-1;">
+            <div class="content">
+               <div class="details">
+                  <span class="name">Historia</span>
+                  <p>Food4U fue fundado en Bogota Colombia en el año 1988 por Don Armando Lattini,
+                     un italiano que junto a su esposa Phati Hodsong de procedencia Americana
+                     decidieron traer a la población colombiana los sabores de ambas tierras,
+                     combinando asi la comida rápida a un estilo Italiano.</p>
+               </div>
+            </div>
+         </div>
+         <div class="card" style="--delay:0;">
+            <div class="content">
+               <div class="details">
+                  <span class="name">Premios</span>
+                  <p>El producto mas famoso del restaurante es una Hamburguesa Chitta, la cual ha
+                     ganado reconocimientos en diversas convenciones internacionales tales como:
+                     <li>Manhathan 1999- The best gourmet Burger, first place</li>
+                     <li>Stn Lucia 2001- Th royal preference, second place</li>
+                     <li>Bogota, Colombia 2001- La Delicia de Bogota, primer lugar.</li>
+                     <li>Madrid, España 2004- La mejor hamburguesa gourmet</li>
+                     <li>Buenos Aires- Argentina 2006 – Champio of all tasted</li>
+                     <li>New york, Estados Unidos 2010- The royal Hamburguer</li>
+                     <li>Texas, Estados Unidos 2016- Favorite flavore</li>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
+
+</body>
+
+</html>
